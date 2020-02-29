@@ -5,7 +5,10 @@
 		$wrapper = $('#wrapper'),
 		$main = $('#main'),
 		$panels = $main.children('.panel'),
-		$nav = $('#nav'), $nav_links = $nav.children('a');
+		$nav = $('#nav'), $nav_links = $nav.children('a')
+		$x = $('.cancel'), $overlay = $('.overlay'), $projects = $('.project'),
+		$Werewolf = $('#Werewolf'), $COPE = $('#COPE'), $PingPong = $('#PingPong'), 
+		$SlidingPuzzle = $('#SlidingPuzzle'), $MouseController = $('#MouseController'), $Graphing = $('#Graphing');
 
 	// Breakpoints.
 		breakpoints({
@@ -202,6 +205,53 @@
 				});
 
 		}
+
+		// Close 
+			$x.on('click', function(e) {
+				console.log("clicked");
+				$overlay.fadeTo('slow', 0);
+				$overlay.css('z-index', 0);
+				$wrapper.fadeTo('fast', 1);
+				$wrapper.css('z-index', 999);
+				$Werewolf.css('display', 'none');
+				$COPE.css('display', 'none');
+				$PingPong.css('display', 'none');
+				$SlidingPuzzle.css('display', 'none');
+				$MouseController.css('display', 'none');
+				$Graphing.css('display', 'none');
+			});
+
+
+		// View project
+			$projects.on('click', function(e) {
+				console.log("view project");
+				switch ($(this).attr('id')) {
+					case 'aWerewolf':
+						$Werewolf.css('display', 'block');
+						break;
+					case 'aCOPE':
+						$COPE.css('display', 'block');
+						break;
+					case 'aPingPong':
+						$PingPong.css('display', 'block');
+						break;
+					case 'aSlidingPuzzle':
+						$SlidingPuzzle.css('display', 'block');
+						break;
+					case 'aMouseController':
+						$MouseController.css('display', 'block');
+						break;
+					case 'aGraphing':
+						console.log($Graphing);
+						$Graphing.css('display', 'block');
+						break;
+				}
+				$overlay.fadeTo('slow', 1);
+				$overlay.css('z-index', 999);
+				$wrapper.fadeTo(1, 0);
+				$wrapper.css('z-index', 0);
+			});
+
 
 		particlesJS('particles-js', {
 			"particles": {
