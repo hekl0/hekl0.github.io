@@ -5,6 +5,7 @@
 		$wrapper = $('#wrapper'),
 		$main = $('#main'),
 		$panels = $main.children('.panel'),
+		$practicles = $('#particles-js'),
 		$nav = $('#nav'), $nav_links = $nav.children('a')
 		$x = $('.cancel'), $overlay = $('.overlay'), $projects = $('.project'),
 		$Werewolf = $('#Werewolf'), $COPE = $('#COPE'), $PingPong = $('#PingPong'), 
@@ -210,7 +211,7 @@
 			$x.on('click', function(e) {
 				console.log("clicked");
 				$overlay.fadeTo('slow', 0);
-				$overlay.css('z-index', 0);
+				$overlay.css('z-index', -1);
 				$wrapper.fadeTo('fast', 1);
 				$wrapper.css('z-index', 999);
 				$Werewolf.css('display', 'none');

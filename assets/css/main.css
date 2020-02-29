@@ -2201,7 +2201,7 @@ input, select, textarea {
 /* Overlay */
 
 	.overlay {
-		font-size: 5vh !important; 
+		font-size: min(4vw, 4vh); 
 		color: white;
 		position: fixed; 
 		width: 100%; 
