@@ -1242,8 +1242,8 @@ input, select, textarea {
 						}
 
 				.row {
-					margin-top: -1.25em;
-					margin-left: -1.25em;
+					margin-top: -1.25em !important;
+					margin-left: -1.25em !important;
 				}
 
 					.row > * {
@@ -2124,7 +2124,7 @@ input, select, textarea {
 
 						#main > .panel.intro div {
 							text-align: center;
-							margin-top: 0.2em !important;
+							margin-top: 0.2em;
 						}
 
 				}
