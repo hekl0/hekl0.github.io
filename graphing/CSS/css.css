@@ -1,0 +1,25 @@
+.content-center {
+	vertical-align: middle;
+	text-align: center;
+}
+
+.one-edge-shadow {
+	box-shadow: 8px 0px 16px -6px grey;
+}
+
+.border-3 {
+    border-width:4px !important;
+	
+}
+	
+polygon {
+	fill: transparent;
+}
+
+svg {
+  text-align: center;
+}
+
+body {
+	background: "Image/background.png";
+}
