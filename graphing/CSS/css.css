@@ -23,3 +23,11 @@ svg {
 body {
 	background: "Image/background.png";
 }
+
+.subheader {
+	margin-top: .2rem;
+	margin-bottom: .5rem;
+	font-weight: 400;
+	line-height: 1.4;
+	color: #8a8a8a;
+}
