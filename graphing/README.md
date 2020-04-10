@@ -4,7 +4,7 @@ An online tool to visualize graph and tree.
 
 ## Usage
 
-Visit the website [DrawingGraph](https://acedbyb.github.io/) and start to draw your graph.
+Visit the website [DrawingGraph](https://hekl0.github.io/graphing) and start to draw your graph.
 
 Command:
 ```
