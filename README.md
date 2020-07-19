@@ -1,6 +1,6 @@
 # Personal Website
 
-My personal website with a personal portfolio page and some tools I made:
+My personal website with some tools I made:
 * [Graphing](https://github.com/hekl0/hekl0.github.io/tree/master/graphing)
 
 ## Built With
