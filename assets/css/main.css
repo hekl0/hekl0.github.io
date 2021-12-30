@@ -1432,7 +1432,7 @@ input, select, textarea {
 	}
 
 	p, ul, ol, dl, table, blockquote, form {
-		margin-bottom: 2em;
+		margin-bottom: 16px;
 	}
 
 /* Table */
@@ -1826,13 +1826,13 @@ input, select, textarea {
 				font-size: 0.3em;
 				height: 2.25em;
 				line-height: 2.25em;
-				left: 50%;
+				left: 15%;
 				opacity: 0;
 				-moz-transition: opacity .25s ease-in-out;
 				-webkit-transition: opacity .25s ease-in-out;
 				-ms-transition: opacity .25s ease-in-out;
 				transition: opacity .25s ease-in-out;
-				width: 5.5em;
+				width: 8em;
 				margin-left: -2.75em;
 			}
 
