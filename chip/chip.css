@@ -1,0 +1,180 @@
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+pre {
+  font-weight: normal;
+  color: #bbb;
+  white-space: -moz-pre-wrap;
+  white-space: -o-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 48%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+b {
+  font-weight: normal;
+}
+b.BOLD {
+  color: #fff;
+}
+b.ITA {
+  font-style: italic;
+}
+b.UND {
+  text-decoration: underline;
+}
+b.STR {
+  text-decoration: line-through;
+}
+b.UNDSTR {
+  text-decoration: underline line-through;
+}
+b.BLK {
+  color: #000000;
+}
+b.RED {
+  color: #aa0000;
+}
+b.GRN {
+  color: #00aa00;
+}
+b.YEL {
+  color: #aa5500;
+}
+b.BLU {
+  color: #0000aa;
+}
+b.MAG {
+  color: #aa00aa;
+}
+b.CYN {
+  color: #00aaaa;
+}
+b.WHI {
+  color: #aaaaaa;
+}
+b.HIK {
+  color: #555555;
+}
+b.HIR {
+  color: #ff5555;
+}
+b.HIG {
+  color: #55ff55;
+}
+b.HIY {
+  color: #ffff55;
+}
+b.HIB {
+  color: #5555ff;
+}
+b.HIM {
+  color: #ff55ff;
+}
+b.HIC {
+  color: #55ffff;
+}
+b.HIW {
+  color: #ffffff;
+}
+b.BBLK {
+  background-color: #000000;
+}
+b.BRED {
+  background-color: #aa0000;
+}
+b.BGRN {
+  background-color: #00aa00;
+}
+b.BYEL {
+  background-color: #aa5500;
+}
+b.BBLU {
+  background-color: #0000aa;
+}
+b.BMAG {
+  background-color: #aa00aa;
+}
+b.BCYN {
+  background-color: #00aaaa;
+}
+b.BWHI {
+  background-color: #aaaaaa;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+}
+
+canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+#pinkboard {
+  position: relative;
+  margin: auto;
+  height: 70%;
+  width: 70%;
+  animation: animate 1.3s infinite;
+}
+
+#pinkboard:before,
+#pinkboard:after {
+  content: "";
+  position: absolute;
+  background: #ff5ca4;
+  width: 100px;
+  height: 160px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+#pinkboard:before {
+  left: 100px;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+#pinkboard:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(0.95);
+  }
+  60% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
